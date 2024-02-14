@@ -1,0 +1,115 @@
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+}
+.contenidor1{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.item1{
+    display: flex;
+    background-color: blueviolet;
+    padding: 20px;
+    gap: 20px;
+}
+.item1a{
+    display: flex;
+    flex-grow: 1;
+    background-color: brown;
+    height: 30px;
+}
+.item1b{
+    display: flex;
+    flex-grow: 6;
+    background-color: brown;
+    height: 30px;
+}
+.item1c{
+    display: flex;
+    flex-grow: 1;
+    background-color: brown;
+    height: 30px;
+}
+.item2{
+    display: flex;
+    background-color: rgb(199, 138, 32);
+    padding: 20px;
+}
+.item2a{
+    display: flex;
+    flex-grow: 1;
+    background-color: burlywood;
+    height: 30px;
+    margin: 3px;
+}
+.contenidor2{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    gap:25px;
+}
+.zona1{
+    display: flex;
+    flex-grow: 2;
+    background-color: rgb(173, 138, 206);
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.zona1a, .zona1b, .zona1c, .zona1d{
+    display: flex;
+    flex-grow: 1;
+    flex-basis: calc(50% - 15px);
+    background-color: rgb(82, 42, 202);
+    height: 30px;
+}
+.zona1e{
+    display: flex;
+    flex-basis: 100%;
+    background-color: aqua;
+    height: 30px;
+    flex-grow: 1;
+}
+.zona2{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(201, 36, 36);
+    padding: 20px;
+    gap: 20px;
+}
+.zona2a, .zona2b{
+display: flex;
+background-color: rgb(221, 247, 72);
+height: 30px;
+}
+.contenidor3{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+}
+.elemento1{
+    background-color: gold;
+    height: 30px;
+    flex-grow: 1;
+}
+@media (max-width: 1024px){
+    .contenidor2{
+        background-color: greenyellow;
+        flex-direction: column;
+    }
+}
+@media (max-width: 767.98px){
+    .item1{
+        flex-direction: column;
+    }
+    .zona1a, .zona1b, .zona1c, .zona1d, .zona1e{
+        flex-basis: 100%;
+    }
+}
+
